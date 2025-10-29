@@ -26,8 +26,8 @@ This repository contains educational examples demonstrating the Global Interpret
 
 This repository combines two educational resources:
 
-1. **10-day Guided Exercises for Python Concurrency Interview Skills**
-	- A structured set of daily exercises to master Python concurrency concepts, patterns, and interview questions.
+1. **10-day Guided Exercises for Python Concurrency**
+	- A structured set of daily exercises to master Python concurrency concepts, patterns, and practical skills.
 	- See **SETUP.md** for environment setup and `requirements.txt` for optional dev tools.
 	- Video playlist references:
 	  - [Python Concurrency: from beginner to pro](https://www.youtube.com/watch?v=18B1pznaU1o)
@@ -90,7 +90,7 @@ python io_bound.py      # Real-world network I/O demo
 ## 🎯 Educational Goals
 
 This repository helps you:
-1. Master Python concurrency for interviews and real-world use
+1. Master Python concurrency for real-world applications and general learning
 2. Understand the GIL and its impact on threading
 3. Learn when to use threading vs. multiprocessing
 4. Benchmark and compare concurrency approaches
@@ -111,7 +111,7 @@ See **SETUP.md** for virtualenv and tooling instructions. A `requirements.txt` i
 
 ---
 
-*This educational repository demonstrates fundamental Python concurrency concepts with practical, runnable examples and a guided 10-day exercise plan.*
+*This educational repository demonstrates fundamental Python concurrency concepts with practical, runnable examples and a guided 10-day exercise plan. These resources are intended for general learning and skill development, not just interview preparation.*
 ## 💡 When to Use Each Approach
 - File I/O operations
 - Network requests (HTTP, database)
