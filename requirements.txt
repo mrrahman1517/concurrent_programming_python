@@ -1,0 +1,6 @@
+# Core code uses only the Python standard library.
+# The packages below are recommended for a smoother practice workflow.
+pytest==8.*
+mypy==1.*
+black==24.*
+rich==13.*
