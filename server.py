@@ -9,6 +9,7 @@ computes the Fibonacci number for that input, and sends the result back.
 from socket import socket, AF_INET, SOCK_STREAM, SOL_SOCKET, SO_REUSEADDR
 from typing import Tuple
 from fib import fib
+from threading import Thread
 
 
 def fib_server(address: Tuple[str, int]) -> None:
@@ -22,7 +23,8 @@ def fib_server(address: Tuple[str, int]) -> None:
     while True:
         client, addr = sock.accept()
         print("Connection", addr)
-        fib_handler(client)
+        #fib_handler(client)
+        Thread(target=fib_handler, args=(client,), ).start()
 
 
 def fib_handler(client: socket) -> None:
@@ -48,4 +50,4 @@ if __name__ == "__main__":
     if len(sys.argv) > 1:
         port = int(sys.argv[1])
     print(f"Starting Fibonacci server on {host}:{port}")
-    fib_server((host, port))
+    fib_server(('', port))
